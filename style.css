@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #e0f7fa;
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-size:initial;
+}
+.container {
+    height: 50px;
+}
+
+h1 {
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bolder;
+    margin: 0;
+    padding-left: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #004080; /* Dark Blue */
+    color: #ffffff;
+    margin-bottom: 5px;
+    border: 5px solid #004080; /* Solid border with the same color as background */
+    border-radius: 20px;
+}
+
+.logoSec {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    margin: 0;
+}
+
+.sidemenuS {
+    padding-right: 25px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none; /* Changed from double underline */
+    font-size: 18px;
+    font-weight: bold;
+    position:relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0bc908;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    position:absolute;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+.clear {
+    clear: both;
+}
+.image-layout {
+    display: grid; /* Use a grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-auto-rows: auto; /* Auto-adjust rows */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+
+.image-item img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+.cont1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.img1 {
+    padding-left: 50px;
+    padding-right: 400px;
+}
+
+.img2 {
+    padding-left: 350px;
+    padding-right: 50px;
+    padding-top: 70px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-align: center; /* Ensures <h1> is centered */
+    margin: 0;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Papyrus;
+    font-style: normal;
+    text-align: center; /* Ensures <h3> is centered */
+    margin: 0;
+}
+
+.img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+}
+
+.img5 {
+    padding-right: 10px;
+}
+
+.cont3 {
+    display: flex;
+    justify-content: space-between; /* Keeps the image at its place */
+    align-items: center;
+}
+
+.text-container {
+    display: inline-block; /* Shrinks container to fit text size */
+    text-align: center; /* Ensures the text is centered */
+    border: 5px solid red; /* Initial border setup */
+    padding: 10px 20px; /* Adds slight space around the text */
+    margin: 10px auto; /* Keeps spacing outside the container */
+    border-radius: 10px; /* Optional rounded corners */
+    animation: rotating-border 3s infinite linear;
+}
+
+.img7 {
+    padding-right: 20px;
+}
+
+@keyframes rotating-border {
+    0% { border-color: red; }
+    33% { border-color: rgb(80, 237, 80); }
+    66% { border-color: rgb(240, 240, 72); }
+    100% { border-color: red; }
+}
+
+.map {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.road {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.roadgreen {
+    background-color: green;
+    color: white;
+}
+
+.roadyellow {
+    background-color: yellow;
+    color: black;
+}
+
+.roadred {
+    background-color: red;
+    color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#suggestedRoutes {
+    margin-top: 20px;
+    font-size: 18px;
+}
+#services{
+    display: flex;
+    padding: 50px 0;
+    width: 100%;
+}
+.project{
+    border-radius:10px ;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius:30px ;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#e0a0a0);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction:column ;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top:20px ;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: darkgray;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 100%;
+}
+.btn:hover{
+    background: #8eb6df;
+}
+
+.contactplaces{
+    flex-basis: 40%;
+}
+.contactme{
+    flex-basis: 55%;
+}
+.con-icon{
+    margin-top: 30px;
+}
+.con-icon a{
+    text-decoration:none ;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(141, 137, 137);
+    display: inline-block;
+   transition: transform 0.5s;
+}
+.con-icon a:hover{
+    color: #e0d7d7;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #8eb6df;
+
+}
+.contactme form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border:0;
+    outline: none;
+    background: #f9f6f6;
+    padding: 15px;
+    margin: 10px 0;
+    color: #090909;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align:center ;
+    padding:25px 0 ;
+    font-weight: 300;
+    margin-top: 20px;
+}
+nav .fa-solid{
+   
+    display:none;
+}
