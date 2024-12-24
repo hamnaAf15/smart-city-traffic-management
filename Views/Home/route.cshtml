@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<a href="index.html" class="back-button"><i class="fa-solid fa-arrow-left"></i></a>
+<h1>Route Suggestions</h1>
+<form id="routeForm">
+    <label for="start">Start Location:</label>
+    <input type="text" id="start" name="start" required>
+
+    <label for="end">End Location:</label>
+    <input type="text" id="end" name="end" required>
+
+    <button type="submit">Get Routes</button>
+</form>
+
+<div id="suggestedRoutes"></div>
+
+
+<script src="script.js"></script>

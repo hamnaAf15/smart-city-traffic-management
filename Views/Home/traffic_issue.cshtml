@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<a href="index.html" class="back-button"><i class="fa-solid fa-arrow-left"></i></a>
+<h1>Report a Traffic Issue</h1>
+<form id="reportForm">
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="issue">Issue Type:</label>
+    <select id="issue" name="issue" required>
+        <option value="accident">Accident</option>
+        <option value="roadblock">Roadblock</option>
+        <option value="congestion">Congestion</option>
+    </select>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <button type="submit">Submit Report</button>
+</form>
+
+<div id="reports"></div>
+<script src="script.js"></script>
