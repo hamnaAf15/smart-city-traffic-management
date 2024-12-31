@@ -15,6 +15,7 @@ body {
     height: 100vh;
     background-size: initial;
     background-image: url('../images/bg.jpg');
+ 
 }
 .container {
     height: 5px;
@@ -287,12 +288,14 @@ button:hover {
     border-width: 2px; 
     padding-bottom: 0;      
 }
-.about{
+.about {
     display: flex;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .headcont {
     background-color: #004080; /* Empty container with a white background */
@@ -345,118 +348,41 @@ button:hover {
     .feature-green {
         background-color:#004080; /* Light green */
     }
-    .contact-section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        padding: 40px;
-        max-width: 1200px;
-        margin: 0 auto;
-       
-      }
-  
-      .contact-form
-      {
-        flex: 1 1 350px;
-        padding: 25px;
-        background-color: #fff;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .contact-links{
-        flex: 1 1 350px;
-        padding: 25px;
-        background-color:#004080;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      } 
-  
-      .contact-form:hover,
-      .contact-links:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      }
-  
-      .contact-form h2
-      {
-        margin-bottom: 15px;
-        font-size: 40px;
-        color: #004080;
-        border-bottom: 2px solid #004080;
-        display: inline-block;
-        padding-bottom: 5px;
-      }
-      .contact-links h2{
-      margin-bottom: 15px;
-        font-size: 40px;
-        color: white;
-        border-bottom: 2px solid white;
-        display: inline-block;
-        padding-bottom: 5px;}
-  
-      .contact-form form {
-        display: flex;
-        flex-direction: column;
-      }
-  
-      .contact-form input,
-      .contact-form textarea {
-        margin-bottom: 20px;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 16px;
-        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: border 0.3s ease;
-      }
-  
-      .contact-form input:focus,
-      .contact-form textarea:focus {
-        border-color: #004080;
-        outline: none;
-      }
-  
-      .contact-form button {
-        padding: 12px;
-        background-color: #004080;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        font-size: 25px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      }
-  
-      .contact-form button:hover {
-        background-color: #0066cc;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      }
-  
-      .contact-links ul {
+.contact {
+    background-color: #0066cc; /* Blue background color */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Optional: Round corners for a softer look */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+    .contact ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
-      }
-  
-      .contact-links li {
-        margin-bottom: 15px;
+        display: flex; /* Use flexbox to align items in a row */
+        justify-content: center; /* Center the items horizontally */
+        gap: 20px; /* Add spacing between items */
+    }
+
+    .contact li {
         font-size: 25px;
-      }
-  
-      .contact-links a {
+    }
+
+    .contact a {
         text-decoration: none;
-        color: white;
+        color: white; /* Text color white for better contrast on blue */
         font-weight: bold;
-        transition: color 0.3s ease, text-decoration 0.3s ease;
-      }
-  
-      .contact-links a:hover {
-        color: #0066cc;
-        text-decoration: underline;
-      }
-      .feature {
+      
+    }
+    .contact a:hover {
+            color: ; /* Change hover color to yellow for contrast */
+            text-decoration: underline;
+    }
+    .contact i {
+        margin-right: 5px;
+    }
+  .feature {
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom and shadow */
         cursor: pointer; /* Change cursor to indicate interactivity */
       }
@@ -492,4 +418,29 @@ button:hover {
       .back-button i {
         font-size: 20px; /* Icon size */
       }
+/* Footer section background color */
+.footer-social-links {
+    background-color: #004080; /* Set background color of the div */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+    .footer-social-links a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: transparent; /* Transparent background for the icon */
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+        .footer-social-links a:hover {
+            transform: scale(1.1); /* Slight scale effect on hover */
+        }
       

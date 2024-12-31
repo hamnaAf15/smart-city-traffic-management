@@ -1,7 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+<script src="https://kit.fontawesome.com/5a5b40c670.js" crossorigin="anonymous"></script>
+<div class="bodyCont">
 <div id="header">
     <div class="container">
 
@@ -12,42 +13,54 @@
     </div>
 </div>
 <div class="heading">
-    <h1>Services</h1>
+	<h1>Services</h1>
 </div>
 <div id="services">
 
     <div class="project">
-        <img src="img 9.jpg" width="300px" height="350px">
+        <img src="~/images/img 9.jpg" width="300px" height="350px" />
         <div class="layer">
             <h2>Traffic Status Display</h2>
-            <p>View live traffic conditions with color-coded roads indicating congestion levels for smarter route planning</p>
-            <a href="page2.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <p>View live traffic conditions with color-coded roads indicating congestion levels for smarter route planning.</p>
+            <a href="@Url.Action("Page2", "Home")">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </div>
     </div>
+
     <div class="project">
-        <img src="img 10.jpg" width="300px" height="350px">
+        <img src="~/images/img 10.jpg" width="300px" height="350px" />
         <div class="layer">
-            <h2>route suggestions</h2>
-            <p>"Get alternate routes based on real-time traffic data to avoid congestion and save time.</p>
-            <a href="route.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <h2>Route Suggestions</h2>
+            <p>Get alternate routes based on real-time traffic data to avoid congestion and save time.</p>
+            <a href="@Url.Action("Route", "Home")">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </div>
     </div>
+
     <div class="project">
-        <img src="img 11.jpg" width="300px" height="350px">
+        <img src="~/images/img 11.jpg" width="300px" height="350px" />
         <div class="layer">
             <h2>Report Traffic Issue</h2>
-            <p>Easily report accidents, roadblocks, or heavy traffic to help improve road safety for everyone</p>
-            <a href="traffic issue.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <p>Easily report accidents, roadblocks, or heavy traffic to help improve road safety for everyone.</p>
+            <a href="@Url.Action("traffic_issue", "Home")">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </div>
     </div>
+
     <div class="project">
-        <img src="img 12.jpg" width="300px" height="350px">
+        <img src="~/images/img 12.jpg" width="300px" height="350px" />
         <div class="layer">
             <h2>Traffic Data Visualization</h2>
             <p>Explore traffic trends with visual data on peak hours, congested areas, and traffic patterns.</p>
-            <a href="~\data_visualization.cshtml"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="@Url.Action("data_visualization", "Home")">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
         </div>
     </div>
+
 </div>
 <div id="about">
     <div class="about">
@@ -58,31 +71,10 @@
             <div class="feature feature-green">Make informed decisions with advanced traffic analytics and visual insights</div>
         </div>
     </div>
-    <div id="contact">
-        <div class="contact-section">
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <h2>Contact Us</h2>
-                <form>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-
-            <!-- Contact Links -->
-
-            <div class="contact-links">
-                <h2>Reach Us At</h2>
-                <ul>
-                    <li><a href="mailto:example@example.com">Email: example@example.com</a></li>
-                    <li><a href="tel:+1234567890">Phone: +123 456 7890</a></li>
-                    <li><a href="https://www.google.com/maps" target="_blank">Location: Find us on Google Maps</a></li>
-                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
+  <!-- Contact Links --></div>
+
 </div>
+
+    
+

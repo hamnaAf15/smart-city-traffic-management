@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "ContactUs";
+}
+<script src="https://kit.fontawesome.com/5a5b40c670.js" crossorigin="anonymous"></script>
+<a href="@Url.Action("Index", "Home")" class="back-button">
+    <i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<h1>Contact Form</h1>
+<form action="/home/SaveData" method="post">
+    <label for="CName">Name:</label>
+    <input type="text" id="CName" name="CName" />
+    <br /><br />
+
+    <label for="CEmail">Email:</label>
+    <input type="text" id="CEmail" name="CEmail" />
+    <br /><br />
+
+    <label for="CPhone">Phone:</label>
+    <input type="text" id="CPhone" name="CPhone" />
+    <br /><br />
+
+    <label for="Cqueries">Queries:</label>
+    <input type="text" id="Cqueries" name="Cqueries" />
+    <br /><br />
+
+    <input type="submit" />
+</form>
+<center><p style="color: brown;">@ViewBag.Message</p></center>
+
+   
+    <div class="footer-social-links">
+        <a href="https://facebook.com" ><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" ><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com" ><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" ><i class="fab fa-youtube"></i></a>
+    </div>

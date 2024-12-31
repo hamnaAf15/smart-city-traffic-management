@@ -1,8 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["page2"] = "Traffic Updates";
 }
 <body>
-    <a href="index.html" class="back-button"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <script src="https://kit.fontawesome.com/5a5b40c670.js" crossorigin="anonymous"></script>
+
+    <a href="@Url.Action("Index", "Home")" class="back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
     <h1>Traffic Status Display</h1>
     <div class="map">
         <div class="roadgreen">Road 1</div>

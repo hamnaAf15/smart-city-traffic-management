@@ -1,8 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<a href="index.html" class="back-button"><i class="fa-solid fa-arrow-left"></i></a>
-<h1>Report a Traffic Issue</h1>
+<script src="https://kit.fontawesome.com/5a5b40c670.js" crossorigin="anonymous"></script>
+<a href="@Url.Action("Index", "Home")" class="back-button">
+    <i class="fa-solid fa-arrow-left"></i>
+</a>
 <form id="reportForm">
     <label for="location">Location:</label>
     <input type="text" id="location" name="location" required>
